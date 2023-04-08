@@ -25,7 +25,7 @@ pub struct ListAProjectSEvents200ResponseInner {
     #[serde(rename = "platform")]
     pub platform: String,
     #[serde(rename = "event.type")]
-    pub event_period_type: String,
+    pub event_period_type: Option<String>,
     #[serde(rename = "groupID")]
     pub group_id: String,
     #[serde(rename = "title")]
@@ -41,7 +41,7 @@ impl ListAProjectSEvents200ResponseInner {
         message: String,
         id: String,
         platform: String,
-        event_period_type: String,
+        event_period_type: Option<String>,
         group_id: String,
         title: String,
     ) -> ListAProjectSEvents200ResponseInner {

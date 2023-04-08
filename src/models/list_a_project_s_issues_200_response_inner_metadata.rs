@@ -11,21 +11,21 @@
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListAProjectSIssues200ResponseInnerMetadata {
     #[serde(rename = "filename")]
-    pub filename: String,
+    pub filename: Option<String>,
     #[serde(rename = "type")]
-    pub r#type: String,
+    pub r#type: Option<String>,
     #[serde(rename = "value")]
-    pub value: String,
+    pub value: Option<String>,
     #[serde(rename = "title")]
-    pub title: String,
+    pub title: Option<String>,
 }
 
 impl ListAProjectSIssues200ResponseInnerMetadata {
     pub fn new(
-        filename: String,
-        r#type: String,
-        value: String,
-        title: String,
+        filename: Option<String>,
+        r#type: Option<String>,
+        value: Option<String>,
+        title: Option<String>,
     ) -> ListAProjectSIssues200ResponseInnerMetadata {
         ListAProjectSIssues200ResponseInnerMetadata {
             filename,
