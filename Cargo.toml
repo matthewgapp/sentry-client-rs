@@ -1,5 +1,5 @@
 [package]
-name = "openapi"
+name = "sentry_client_rs"
 version = "0.1.0"
 authors = ["partners@sentry.io"]
 description = "Sentry Public API"

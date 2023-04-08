@@ -1061,7 +1061,7 @@ pub async fn retrieve_release_health_session_statistics(
         "multi" => local_var_req_builder.query(
             &project
                 .into_iter()
-                .map(|p| ("project".to_owned(), p))
+                .map(|p| ("project".to_owned(), p.to_string()))
                 .collect::<Vec<(std::string::String, std::string::String)>>(),
         ),
         _ => local_var_req_builder.query(&[(

@@ -10,8 +10,6 @@
 
 /// RetrieveReleaseHealthSessionStatistics200ResponseGroupsInner : A grouped result, as requested by the `groupBy` request parameter.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RetrieveReleaseHealthSessionStatistics200ResponseGroupsInner {
     /// These are key/value pairs, the key being the requested `groupBy` property with its corresponding value.
@@ -27,13 +25,11 @@ pub struct RetrieveReleaseHealthSessionStatistics200ResponseGroupsInner {
 
 impl RetrieveReleaseHealthSessionStatistics200ResponseGroupsInner {
     /// A grouped result, as requested by the `groupBy` request parameter.
-    pub fn new(by: serde_json::Value, totals: serde_json::Value, series: ::std::collections::HashMap<String, Vec<i32>>) -> RetrieveReleaseHealthSessionStatistics200ResponseGroupsInner {
-        RetrieveReleaseHealthSessionStatistics200ResponseGroupsInner {
-            by,
-            totals,
-            series,
-        }
+    pub fn new(
+        by: serde_json::Value,
+        totals: serde_json::Value,
+        series: ::std::collections::HashMap<String, Vec<i32>>,
+    ) -> RetrieveReleaseHealthSessionStatistics200ResponseGroupsInner {
+        RetrieveReleaseHealthSessionStatistics200ResponseGroupsInner { by, totals, series }
     }
 }
-
-

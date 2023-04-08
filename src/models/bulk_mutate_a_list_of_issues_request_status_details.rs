@@ -10,8 +10,6 @@
 
 /// BulkMutateAListOfIssuesRequestStatusDetails : Additional details about the resolution. Valid values are `\"inRelease\"`, `\"inNextRelease\"`, `\"inCommit\"`, `\"ignoreDuration\"`, `\"ignoreCount\"`, `\"ignoreWindow\"`, `\"ignoreUserCount\"`, and `\"ignoreUserWindow\"`.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct BulkMutateAListOfIssuesRequestStatusDetails {
     #[serde(rename = "inRelease", skip_serializing_if = "Option::is_none")]
@@ -47,5 +45,3 @@ impl BulkMutateAListOfIssuesRequestStatusDetails {
         }
     }
 }
-
-
